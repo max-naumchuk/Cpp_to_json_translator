@@ -1,0 +1,140 @@
+[
+  {
+    "arguments-declarators": [],
+    "constant-section": [],
+    "result-type": {
+      "type": "builtin-type",
+      "type-value": "int"
+    },
+    "subroutine-body": {
+      "statements": [
+        {
+          "const": false,
+          "declarators": [
+            {
+              "constructor-arguments": [],
+              "constructor-name": null,
+              "reference": false,
+              "type": "declarator",
+              "variable-name": "a",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "int"
+              }
+            }
+          ],
+          "global": false,
+          "static": false,
+          "type": "variables-declaration"
+        },
+        {
+          "expression": {
+            "assignment-type": "int",
+            "expression": {
+              "constant-type": "integer",
+              "constant-value": 1,
+              "type": "literal-constant"
+            },
+            "type": "assignment",
+            "variable": {
+              "type": "variable-reference",
+              "variable-name": "a",
+              "variable-type": "int",
+              "variable-usage": "lvalue"
+            }
+          },
+          "type": "expression-statement"
+        },
+        {
+          "expression-to-analyze": {
+            "type": "variable-reference",
+            "variable-name": "a",
+            "variable-type": "int",
+            "variable-usage": "rvalue"
+          },
+          "pass-control": true,
+          "type": "choose-statement",
+          "variants": [
+            {
+              "condition-label": {
+                "constant-type": "integer",
+                "constant-value": 1,
+                "type": "literal-constant"
+              },
+              "type": "choose-variant",
+              "variant-body": {
+                "statements": [
+                  {
+                    "expression": {
+                      "assignment-type": "int",
+                      "expression": {
+                        "constant-type": "integer",
+                        "constant-value": 2,
+                        "type": "literal-constant"
+                      },
+                      "type": "assignment",
+                      "variable": {
+                        "type": "variable-reference",
+                        "variable-name": "a",
+                        "variable-type": "int",
+                        "variable-usage": "lvalue"
+                      }
+                    },
+                    "type": "expression-statement"
+                  },
+                  {
+                    "label": null,
+                    "type": "break-statement"
+                  }
+                ],
+                "type": "compound-statement"
+              }
+            },
+            {
+              "condition-label": null,
+              "type": "choose-variant",
+              "variant-body": {
+                "statements": [
+                  {
+                    "expression": {
+                      "assignment-type": "int",
+                      "expression": {
+                        "constant-type": "integer",
+                        "constant-value": 0,
+                        "type": "literal-constant"
+                      },
+                      "type": "assignment",
+                      "variable": {
+                        "type": "variable-reference",
+                        "variable-name": "a",
+                        "variable-type": "int",
+                        "variable-usage": "lvalue"
+                      }
+                    },
+                    "type": "expression-statement"
+                  }
+                ],
+                "type": "compound-statement"
+              }
+            }
+          ]
+        },
+        {
+          "expression": {
+            "constant-type": "integer",
+            "constant-value": 0,
+            "type": "literal-constant"
+          },
+          "the-last-statement": true,
+          "type": "return-statement"
+        }
+      ],
+      "type": "compound-statement"
+    },
+    "subroutine-name": "main",
+    "subroutines-section": [],
+    "type": "subroutine-declaration",
+    "type-section": [],
+    "variables-section": []
+  }
+]

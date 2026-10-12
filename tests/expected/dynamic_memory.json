@@ -1,0 +1,165 @@
+[
+  {
+    "arguments-declarators": [],
+    "constant-section": [],
+    "result-type": {
+      "type": "builtin-type",
+      "type-value": "int"
+    },
+    "subroutine-body": {
+      "statements": [
+        {
+          "const": false,
+          "declarators": [
+            {
+              "constructor-arguments": [],
+              "constructor-name": null,
+              "reference": false,
+              "type": "declarator",
+              "variable-name": "p",
+              "variable-type": {
+                "pointer-to": {
+                  "type": "builtin-type",
+                  "type-value": "int"
+                },
+                "type": "pointer-type"
+              }
+            }
+          ],
+          "global": false,
+          "static": false,
+          "type": "variables-declaration"
+        },
+        {
+          "const": false,
+          "declarators": [
+            {
+              "constructor-arguments": [],
+              "constructor-name": null,
+              "reference": false,
+              "type": "declarator",
+              "variable-name": "arr",
+              "variable-type": {
+                "pointer-to": {
+                  "type": "builtin-type",
+                  "type-value": "int"
+                },
+                "type": "pointer-type"
+              }
+            }
+          ],
+          "global": false,
+          "static": false,
+          "type": "variables-declaration"
+        },
+        {
+          "expression": {
+            "assignment-type": "int*",
+            "expression": {
+              "address-hint": null,
+              "array-flag": false,
+              "constructor-arguments": [],
+              "constructor-name": null,
+              "type": "dynamic-memory-allocation",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "int"
+              }
+            },
+            "type": "assignment",
+            "variable": {
+              "type": "variable-reference",
+              "variable-name": "p",
+              "variable-type": "int*",
+              "variable-usage": "lvalue"
+            }
+          },
+          "type": "expression-statement"
+        },
+        {
+          "expression": {
+            "assignment-type": "int*",
+            "expression": {
+              "address-hint": null,
+              "amount-of-elements": {
+                "constant-type": "integer",
+                "constant-value": 5,
+                "type": "literal-constant"
+              },
+              "array-flag": true,
+              "constructor-arguments": [],
+              "constructor-name": null,
+              "element-type": {
+                "type": "builtin-type",
+                "type-value": "int"
+              },
+              "type": "dynamic-memory-allocation"
+            },
+            "type": "assignment",
+            "variable": {
+              "type": "variable-reference",
+              "variable-name": "arr",
+              "variable-type": "int*",
+              "variable-usage": "lvalue"
+            }
+          },
+          "type": "expression-statement"
+        },
+        {
+          "expression": {
+            "array-flag": false,
+            "destructor-arguments": [],
+            "destructor-name": null,
+            "pointer": {
+              "type": "variable-reference",
+              "variable-name": "p",
+              "variable-type": "int*",
+              "variable-usage": "rvalue"
+            },
+            "type": "dynamic-memory-deallocation",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "int"
+            }
+          },
+          "type": "expression-statement"
+        },
+        {
+          "expression": {
+            "amount-of-elements": null,
+            "array-flag": true,
+            "destructor-arguments": [],
+            "destructor-name": null,
+            "element-type": {
+              "type": "builtin-type",
+              "type-value": "int"
+            },
+            "pointer": {
+              "type": "variable-reference",
+              "variable-name": "arr",
+              "variable-type": "int*",
+              "variable-usage": "rvalue"
+            },
+            "type": "dynamic-memory-deallocation"
+          },
+          "type": "expression-statement"
+        },
+        {
+          "expression": {
+            "constant-type": "integer",
+            "constant-value": 0,
+            "type": "literal-constant"
+          },
+          "the-last-statement": true,
+          "type": "return-statement"
+        }
+      ],
+      "type": "compound-statement"
+    },
+    "subroutine-name": "main",
+    "subroutines-section": [],
+    "type": "subroutine-declaration",
+    "type-section": [],
+    "variables-section": []
+  }
+]

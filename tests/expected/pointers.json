@@ -1,0 +1,153 @@
+[
+  {
+    "arguments-declarators": [],
+    "constant-section": [],
+    "result-type": {
+      "type": "builtin-type",
+      "type-value": "int"
+    },
+    "subroutine-body": {
+      "statements": [
+        {
+          "const": false,
+          "declarators": [
+            {
+              "constructor-arguments": [],
+              "constructor-name": null,
+              "reference": false,
+              "type": "declarator",
+              "variable-name": "x",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "int"
+              }
+            }
+          ],
+          "global": false,
+          "static": false,
+          "type": "variables-declaration"
+        },
+        {
+          "const": false,
+          "declarators": [
+            {
+              "constructor-arguments": [],
+              "constructor-name": null,
+              "reference": false,
+              "type": "declarator",
+              "variable-name": "p",
+              "variable-type": {
+                "pointer-to": {
+                  "type": "builtin-type",
+                  "type-value": "int"
+                },
+                "type": "pointer-type"
+              }
+            }
+          ],
+          "global": false,
+          "static": false,
+          "type": "variables-declaration"
+        },
+        {
+          "const": false,
+          "declarators": [
+            {
+              "constructor-arguments": [],
+              "constructor-name": null,
+              "reference": false,
+              "type": "declarator",
+              "variable-name": "y",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "int"
+              }
+            }
+          ],
+          "global": false,
+          "static": false,
+          "type": "variables-declaration"
+        },
+        {
+          "expression": {
+            "assignment-type": "int",
+            "expression": {
+              "constant-type": "integer",
+              "constant-value": 5,
+              "type": "literal-constant"
+            },
+            "type": "assignment",
+            "variable": {
+              "type": "variable-reference",
+              "variable-name": "x",
+              "variable-type": "int",
+              "variable-usage": "lvalue"
+            }
+          },
+          "type": "expression-statement"
+        },
+        {
+          "expression": {
+            "assignment-type": "int*",
+            "expression": {
+              "argument": {
+                "type": "variable-reference",
+                "variable-name": "x",
+                "variable-type": "int",
+                "variable-usage": "lvalue"
+              },
+              "result-type": "int*",
+              "type": "address"
+            },
+            "type": "assignment",
+            "variable": {
+              "type": "variable-reference",
+              "variable-name": "p",
+              "variable-type": "int*",
+              "variable-usage": "lvalue"
+            }
+          },
+          "type": "expression-statement"
+        },
+        {
+          "expression": {
+            "assignment-type": "int",
+            "expression": {
+              "argument": {
+                "type": "variable-reference",
+                "variable-name": "p",
+                "variable-type": "int*",
+                "variable-usage": "rvalue"
+              },
+              "result-type": "int",
+              "type": "dereference"
+            },
+            "type": "assignment",
+            "variable": {
+              "type": "variable-reference",
+              "variable-name": "y",
+              "variable-type": "int",
+              "variable-usage": "lvalue"
+            }
+          },
+          "type": "expression-statement"
+        },
+        {
+          "expression": {
+            "constant-type": "integer",
+            "constant-value": 0,
+            "type": "literal-constant"
+          },
+          "the-last-statement": true,
+          "type": "return-statement"
+        }
+      ],
+      "type": "compound-statement"
+    },
+    "subroutine-name": "main",
+    "subroutines-section": [],
+    "type": "subroutine-declaration",
+    "type-section": [],
+    "variables-section": []
+  }
+]

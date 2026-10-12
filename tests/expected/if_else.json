@@ -1,0 +1,130 @@
+[
+  {
+    "arguments-declarators": [],
+    "constant-section": [],
+    "result-type": {
+      "type": "builtin-type",
+      "type-value": "int"
+    },
+    "subroutine-body": {
+      "statements": [
+        {
+          "const": false,
+          "declarators": [
+            {
+              "constructor-arguments": [],
+              "constructor-name": null,
+              "reference": false,
+              "type": "declarator",
+              "variable-name": "a",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "int"
+              }
+            }
+          ],
+          "global": false,
+          "static": false,
+          "type": "variables-declaration"
+        },
+        {
+          "expression": {
+            "assignment-type": "int",
+            "expression": {
+              "constant-type": "integer",
+              "constant-value": 1,
+              "type": "literal-constant"
+            },
+            "type": "assignment",
+            "variable": {
+              "type": "variable-reference",
+              "variable-name": "a",
+              "variable-type": "int",
+              "variable-usage": "lvalue"
+            }
+          },
+          "type": "expression-statement"
+        },
+        {
+          "condition": {
+            "left": {
+              "type": "variable-reference",
+              "variable-name": "a",
+              "variable-type": "int",
+              "variable-usage": "rvalue"
+            },
+            "result-type": "boolean",
+            "right": {
+              "constant-type": "integer",
+              "constant-value": 0,
+              "type": "literal-constant"
+            },
+            "type": "greater"
+          },
+          "if-false": {
+            "statements": [
+              {
+                "expression": {
+                  "assignment-type": "int",
+                  "expression": {
+                    "constant-type": "integer",
+                    "constant-value": 3,
+                    "type": "literal-constant"
+                  },
+                  "type": "assignment",
+                  "variable": {
+                    "type": "variable-reference",
+                    "variable-name": "a",
+                    "variable-type": "int",
+                    "variable-usage": "lvalue"
+                  }
+                },
+                "type": "expression-statement"
+              }
+            ],
+            "type": "compound-statement"
+          },
+          "if-true": {
+            "statements": [
+              {
+                "expression": {
+                  "assignment-type": "int",
+                  "expression": {
+                    "constant-type": "integer",
+                    "constant-value": 2,
+                    "type": "literal-constant"
+                  },
+                  "type": "assignment",
+                  "variable": {
+                    "type": "variable-reference",
+                    "variable-name": "a",
+                    "variable-type": "int",
+                    "variable-usage": "lvalue"
+                  }
+                },
+                "type": "expression-statement"
+              }
+            ],
+            "type": "compound-statement"
+          },
+          "type": "conditional-statement"
+        },
+        {
+          "expression": {
+            "constant-type": "integer",
+            "constant-value": 0,
+            "type": "literal-constant"
+          },
+          "the-last-statement": true,
+          "type": "return-statement"
+        }
+      ],
+      "type": "compound-statement"
+    },
+    "subroutine-name": "main",
+    "subroutines-section": [],
+    "type": "subroutine-declaration",
+    "type-section": [],
+    "variables-section": []
+  }
+]

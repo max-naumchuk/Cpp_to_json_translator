@@ -1,0 +1,193 @@
+[
+  {
+    "arguments-declarators": [],
+    "constant-section": [],
+    "result-type": {
+      "type": "builtin-type",
+      "type-value": "int"
+    },
+    "subroutine-body": {
+      "statements": [
+        {
+          "const": false,
+          "declarators": [
+            {
+              "constructor-arguments": [],
+              "constructor-name": null,
+              "reference": false,
+              "type": "declarator",
+              "variable-name": "x",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "double"
+              }
+            },
+            {
+              "constructor-arguments": [],
+              "constructor-name": null,
+              "reference": false,
+              "type": "declarator",
+              "variable-name": "y",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "double"
+              }
+            },
+            {
+              "constructor-arguments": [],
+              "constructor-name": null,
+              "reference": false,
+              "type": "declarator",
+              "variable-name": "z",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "double"
+              }
+            }
+          ],
+          "global": false,
+          "static": false,
+          "type": "variables-declaration"
+        },
+        {
+          "expression": {
+            "assignment-type": "double",
+            "expression": {
+              "constant-type": "real",
+              "constant-value": 1.5,
+              "type": "literal-constant"
+            },
+            "type": "assignment",
+            "variable": {
+              "type": "variable-reference",
+              "variable-name": "x",
+              "variable-type": "double",
+              "variable-usage": "lvalue"
+            }
+          },
+          "type": "expression-statement"
+        },
+        {
+          "expression": {
+            "assignment-type": "double",
+            "expression": {
+              "constant-type": "real",
+              "constant-value": 2.0,
+              "type": "literal-constant"
+            },
+            "type": "assignment",
+            "variable": {
+              "type": "variable-reference",
+              "variable-name": "y",
+              "variable-type": "double",
+              "variable-usage": "lvalue"
+            }
+          },
+          "type": "expression-statement"
+        },
+        {
+          "expression": {
+            "assignment-type": "double",
+            "expression": {
+              "left": {
+                "type": "variable-reference",
+                "variable-name": "x",
+                "variable-type": "double",
+                "variable-usage": "rvalue"
+              },
+              "result-type": "double",
+              "right": {
+                "type": "variable-reference",
+                "variable-name": "y",
+                "variable-type": "double",
+                "variable-usage": "rvalue"
+              },
+              "type": "sum"
+            },
+            "type": "assignment",
+            "variable": {
+              "type": "variable-reference",
+              "variable-name": "z",
+              "variable-type": "double",
+              "variable-usage": "lvalue"
+            }
+          },
+          "type": "expression-statement"
+        },
+        {
+          "expression": {
+            "assignment-type": "double",
+            "expression": {
+              "left": {
+                "type": "variable-reference",
+                "variable-name": "x",
+                "variable-type": "double",
+                "variable-usage": "rvalue"
+              },
+              "result-type": "double",
+              "right": {
+                "type": "variable-reference",
+                "variable-name": "y",
+                "variable-type": "double",
+                "variable-usage": "rvalue"
+              },
+              "type": "product"
+            },
+            "type": "assignment",
+            "variable": {
+              "type": "variable-reference",
+              "variable-name": "z",
+              "variable-type": "double",
+              "variable-usage": "lvalue"
+            }
+          },
+          "type": "expression-statement"
+        },
+        {
+          "expression": {
+            "assignment-type": "double",
+            "expression": {
+              "left": {
+                "type": "variable-reference",
+                "variable-name": "x",
+                "variable-type": "double",
+                "variable-usage": "rvalue"
+              },
+              "result-type": "double",
+              "right": {
+                "type": "variable-reference",
+                "variable-name": "y",
+                "variable-type": "double",
+                "variable-usage": "rvalue"
+              },
+              "type": "quotient"
+            },
+            "type": "assignment",
+            "variable": {
+              "type": "variable-reference",
+              "variable-name": "z",
+              "variable-type": "double",
+              "variable-usage": "lvalue"
+            }
+          },
+          "type": "expression-statement"
+        },
+        {
+          "expression": {
+            "constant-type": "integer",
+            "constant-value": 0,
+            "type": "literal-constant"
+          },
+          "the-last-statement": true,
+          "type": "return-statement"
+        }
+      ],
+      "type": "compound-statement"
+    },
+    "subroutine-name": "main",
+    "subroutines-section": [],
+    "type": "subroutine-declaration",
+    "type-section": [],
+    "variables-section": []
+  }
+]

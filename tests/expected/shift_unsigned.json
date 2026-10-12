@@ -1,0 +1,187 @@
+[
+  {
+    "arguments-declarators": [],
+    "constant-section": [],
+    "result-type": {
+      "type": "builtin-type",
+      "type-value": "int"
+    },
+    "subroutine-body": {
+      "statements": [
+        {
+          "const": false,
+          "declarators": [
+            {
+              "constructor-arguments": [],
+              "constructor-name": null,
+              "reference": false,
+              "type": "declarator",
+              "variable-name": "s",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "int"
+              }
+            }
+          ],
+          "global": false,
+          "static": false,
+          "type": "variables-declaration"
+        },
+        {
+          "const": false,
+          "declarators": [
+            {
+              "constructor-arguments": [],
+              "constructor-name": null,
+              "reference": false,
+              "type": "declarator",
+              "variable-name": "u",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "unsigned int"
+              }
+            }
+          ],
+          "global": false,
+          "static": false,
+          "type": "variables-declaration"
+        },
+        {
+          "const": false,
+          "declarators": [
+            {
+              "constructor-arguments": [],
+              "constructor-name": null,
+              "reference": false,
+              "type": "declarator",
+              "variable-name": "r",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "int"
+              }
+            }
+          ],
+          "global": false,
+          "static": false,
+          "type": "variables-declaration"
+        },
+        {
+          "expression": {
+            "assignment-type": "int",
+            "expression": {
+              "left": {
+                "constant-type": "integer",
+                "constant-value": 0,
+                "type": "literal-constant"
+              },
+              "result-type": "int",
+              "right": {
+                "constant-type": "integer",
+                "constant-value": 8,
+                "type": "literal-constant"
+              },
+              "type": "difference"
+            },
+            "type": "assignment",
+            "variable": {
+              "type": "variable-reference",
+              "variable-name": "s",
+              "variable-type": "int",
+              "variable-usage": "lvalue"
+            }
+          },
+          "type": "expression-statement"
+        },
+        {
+          "expression": {
+            "assignment-type": "unsigned int",
+            "expression": {
+              "constant-type": "integer",
+              "constant-value": 8,
+              "type": "literal-constant"
+            },
+            "type": "assignment",
+            "variable": {
+              "type": "variable-reference",
+              "variable-name": "u",
+              "variable-type": "unsigned int",
+              "variable-usage": "lvalue"
+            }
+          },
+          "type": "expression-statement"
+        },
+        {
+          "expression": {
+            "assignment-type": "int",
+            "expression": {
+              "amount": {
+                "constant-type": "integer",
+                "constant-value": 1,
+                "type": "literal-constant"
+              },
+              "argument": {
+                "type": "variable-reference",
+                "variable-name": "s",
+                "variable-type": "int",
+                "variable-usage": "rvalue"
+              },
+              "result-type": "int",
+              "type": "arithmetic-bitwise-shift-right"
+            },
+            "type": "assignment",
+            "variable": {
+              "type": "variable-reference",
+              "variable-name": "r",
+              "variable-type": "int",
+              "variable-usage": "lvalue"
+            }
+          },
+          "type": "expression-statement"
+        },
+        {
+          "expression": {
+            "assignment-type": "int",
+            "expression": {
+              "amount": {
+                "constant-type": "integer",
+                "constant-value": 1,
+                "type": "literal-constant"
+              },
+              "argument": {
+                "type": "variable-reference",
+                "variable-name": "u",
+                "variable-type": "unsigned int",
+                "variable-usage": "rvalue"
+              },
+              "result-type": "int",
+              "type": "logic-bitwise-shift-right"
+            },
+            "type": "assignment",
+            "variable": {
+              "type": "variable-reference",
+              "variable-name": "r",
+              "variable-type": "int",
+              "variable-usage": "lvalue"
+            }
+          },
+          "type": "expression-statement"
+        },
+        {
+          "expression": {
+            "constant-type": "integer",
+            "constant-value": 0,
+            "type": "literal-constant"
+          },
+          "the-last-statement": true,
+          "type": "return-statement"
+        }
+      ],
+      "type": "compound-statement"
+    },
+    "subroutine-name": "main",
+    "subroutines-section": [],
+    "type": "subroutine-declaration",
+    "type-section": [],
+    "variables-section": []
+  }
+]

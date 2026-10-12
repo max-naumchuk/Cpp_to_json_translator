@@ -1,0 +1,92 @@
+[
+  {
+    "const": false,
+    "declarators": [
+      {
+        "constructor-arguments": [],
+        "constructor-name": null,
+        "reference": false,
+        "type": "declarator",
+        "variable-name": "g",
+        "variable-type": {
+          "type": "builtin-type",
+          "type-value": "int"
+        }
+      }
+    ],
+    "global": true,
+    "static": false,
+    "type": "variables-declaration"
+  },
+  {
+    "const": true,
+    "declarators": [
+      {
+        "constructor-arguments": [
+          {
+            "constant-type": "integer",
+            "constant-value": 3,
+            "type": "literal-constant"
+          }
+        ],
+        "constructor-name": null,
+        "reference": false,
+        "type": "declarator",
+        "variable-name": "K",
+        "variable-type": {
+          "type": "builtin-type",
+          "type-value": "int"
+        }
+      }
+    ],
+    "global": true,
+    "static": false,
+    "type": "variables-declaration"
+  },
+  {
+    "const": false,
+    "declarators": [
+      {
+        "constructor-arguments": [],
+        "constructor-name": null,
+        "reference": false,
+        "type": "declarator",
+        "variable-name": "s",
+        "variable-type": {
+          "type": "builtin-type",
+          "type-value": "int"
+        }
+      }
+    ],
+    "global": true,
+    "static": true,
+    "type": "variables-declaration"
+  },
+  {
+    "arguments-declarators": [],
+    "constant-section": [],
+    "result-type": {
+      "type": "builtin-type",
+      "type-value": "int"
+    },
+    "subroutine-body": {
+      "statements": [
+        {
+          "expression": {
+            "constant-type": "integer",
+            "constant-value": 0,
+            "type": "literal-constant"
+          },
+          "the-last-statement": true,
+          "type": "return-statement"
+        }
+      ],
+      "type": "compound-statement"
+    },
+    "subroutine-name": "main",
+    "subroutines-section": [],
+    "type": "subroutine-declaration",
+    "type-section": [],
+    "variables-section": []
+  }
+]

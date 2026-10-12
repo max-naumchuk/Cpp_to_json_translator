@@ -1,0 +1,272 @@
+[
+  {
+    "arguments-declarators": [],
+    "constant-section": [],
+    "result-type": {
+      "type": "builtin-type",
+      "type-value": "int"
+    },
+    "subroutine-body": {
+      "statements": [
+        {
+          "const": false,
+          "declarators": [
+            {
+              "constructor-arguments": [],
+              "constructor-name": null,
+              "reference": false,
+              "type": "declarator",
+              "variable-name": "a",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "int"
+              }
+            },
+            {
+              "constructor-arguments": [],
+              "constructor-name": null,
+              "reference": false,
+              "type": "declarator",
+              "variable-name": "b",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "int"
+              }
+            },
+            {
+              "constructor-arguments": [],
+              "constructor-name": null,
+              "reference": false,
+              "type": "declarator",
+              "variable-name": "c",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "int"
+              }
+            }
+          ],
+          "global": false,
+          "static": false,
+          "type": "variables-declaration"
+        },
+        {
+          "expression": {
+            "assignment-type": "int",
+            "expression": {
+              "constant-type": "integer",
+              "constant-value": 6,
+              "type": "literal-constant"
+            },
+            "type": "assignment",
+            "variable": {
+              "type": "variable-reference",
+              "variable-name": "a",
+              "variable-type": "int",
+              "variable-usage": "lvalue"
+            }
+          },
+          "type": "expression-statement"
+        },
+        {
+          "expression": {
+            "assignment-type": "int",
+            "expression": {
+              "constant-type": "integer",
+              "constant-value": 3,
+              "type": "literal-constant"
+            },
+            "type": "assignment",
+            "variable": {
+              "type": "variable-reference",
+              "variable-name": "b",
+              "variable-type": "int",
+              "variable-usage": "lvalue"
+            }
+          },
+          "type": "expression-statement"
+        },
+        {
+          "expression": {
+            "assignment-type": "int",
+            "expression": {
+              "left": {
+                "type": "variable-reference",
+                "variable-name": "a",
+                "variable-type": "int",
+                "variable-usage": "rvalue"
+              },
+              "result-type": "int",
+              "right": {
+                "type": "variable-reference",
+                "variable-name": "b",
+                "variable-type": "int",
+                "variable-usage": "rvalue"
+              },
+              "type": "bitwise-and"
+            },
+            "type": "assignment",
+            "variable": {
+              "type": "variable-reference",
+              "variable-name": "c",
+              "variable-type": "int",
+              "variable-usage": "lvalue"
+            }
+          },
+          "type": "expression-statement"
+        },
+        {
+          "expression": {
+            "assignment-type": "int",
+            "expression": {
+              "left": {
+                "type": "variable-reference",
+                "variable-name": "a",
+                "variable-type": "int",
+                "variable-usage": "rvalue"
+              },
+              "result-type": "int",
+              "right": {
+                "type": "variable-reference",
+                "variable-name": "b",
+                "variable-type": "int",
+                "variable-usage": "rvalue"
+              },
+              "type": "bitwise-or"
+            },
+            "type": "assignment",
+            "variable": {
+              "type": "variable-reference",
+              "variable-name": "c",
+              "variable-type": "int",
+              "variable-usage": "lvalue"
+            }
+          },
+          "type": "expression-statement"
+        },
+        {
+          "expression": {
+            "assignment-type": "int",
+            "expression": {
+              "left": {
+                "type": "variable-reference",
+                "variable-name": "a",
+                "variable-type": "int",
+                "variable-usage": "rvalue"
+              },
+              "result-type": "int",
+              "right": {
+                "type": "variable-reference",
+                "variable-name": "b",
+                "variable-type": "int",
+                "variable-usage": "rvalue"
+              },
+              "type": "bitwise-xor"
+            },
+            "type": "assignment",
+            "variable": {
+              "type": "variable-reference",
+              "variable-name": "c",
+              "variable-type": "int",
+              "variable-usage": "lvalue"
+            }
+          },
+          "type": "expression-statement"
+        },
+        {
+          "expression": {
+            "assignment-type": "int",
+            "expression": {
+              "argument": {
+                "type": "variable-reference",
+                "variable-name": "a",
+                "variable-type": "int",
+                "variable-usage": "rvalue"
+              },
+              "result-type": "int",
+              "type": "bitwise-not"
+            },
+            "type": "assignment",
+            "variable": {
+              "type": "variable-reference",
+              "variable-name": "c",
+              "variable-type": "int",
+              "variable-usage": "lvalue"
+            }
+          },
+          "type": "expression-statement"
+        },
+        {
+          "expression": {
+            "assignment-type": "int",
+            "expression": {
+              "amount": {
+                "constant-type": "integer",
+                "constant-value": 1,
+                "type": "literal-constant"
+              },
+              "argument": {
+                "type": "variable-reference",
+                "variable-name": "a",
+                "variable-type": "int",
+                "variable-usage": "rvalue"
+              },
+              "result-type": "int",
+              "type": "bitwise-shift-left"
+            },
+            "type": "assignment",
+            "variable": {
+              "type": "variable-reference",
+              "variable-name": "c",
+              "variable-type": "int",
+              "variable-usage": "lvalue"
+            }
+          },
+          "type": "expression-statement"
+        },
+        {
+          "expression": {
+            "assignment-type": "int",
+            "expression": {
+              "amount": {
+                "constant-type": "integer",
+                "constant-value": 1,
+                "type": "literal-constant"
+              },
+              "argument": {
+                "type": "variable-reference",
+                "variable-name": "a",
+                "variable-type": "int",
+                "variable-usage": "rvalue"
+              },
+              "result-type": "int",
+              "type": "arithmetic-bitwise-shift-right"
+            },
+            "type": "assignment",
+            "variable": {
+              "type": "variable-reference",
+              "variable-name": "c",
+              "variable-type": "int",
+              "variable-usage": "lvalue"
+            }
+          },
+          "type": "expression-statement"
+        },
+        {
+          "expression": {
+            "constant-type": "integer",
+            "constant-value": 0,
+            "type": "literal-constant"
+          },
+          "the-last-statement": true,
+          "type": "return-statement"
+        }
+      ],
+      "type": "compound-statement"
+    },
+    "subroutine-name": "main",
+    "subroutines-section": [],
+    "type": "subroutine-declaration",
+    "type-section": [],
+    "variables-section": []
+  }
+]

@@ -1,0 +1,144 @@
+[
+  {
+    "arguments-declarators": [],
+    "constant-section": [],
+    "result-type": {
+      "type": "builtin-type",
+      "type-value": "int"
+    },
+    "subroutine-body": {
+      "statements": [
+        {
+          "const": false,
+          "declarators": [
+            {
+              "constructor-arguments": [],
+              "constructor-name": null,
+              "reference": false,
+              "type": "declarator",
+              "variable-name": "i",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "int"
+              }
+            }
+          ],
+          "global": false,
+          "static": false,
+          "type": "variables-declaration"
+        },
+        {
+          "begin-condition": {
+            "left": {
+              "type": "variable-reference",
+              "variable-name": "i",
+              "variable-type": "int",
+              "variable-usage": "rvalue"
+            },
+            "result-type": "boolean",
+            "right": {
+              "constant-type": "integer",
+              "constant-value": 5,
+              "type": "literal-constant"
+            },
+            "type": "less"
+          },
+          "end-condition": null,
+          "loop-body": {
+            "statements": [
+              {
+                "condition": {
+                  "left": {
+                    "type": "variable-reference",
+                    "variable-name": "i",
+                    "variable-type": "int",
+                    "variable-usage": "rvalue"
+                  },
+                  "result-type": "boolean",
+                  "right": {
+                    "constant-type": "integer",
+                    "constant-value": 2,
+                    "type": "literal-constant"
+                  },
+                  "type": "equals"
+                },
+                "if-false": null,
+                "if-true": {
+                  "label": null,
+                  "type": "continue-statement"
+                },
+                "type": "conditional-statement"
+              },
+              {
+                "condition": {
+                  "left": {
+                    "type": "variable-reference",
+                    "variable-name": "i",
+                    "variable-type": "int",
+                    "variable-usage": "rvalue"
+                  },
+                  "result-type": "boolean",
+                  "right": {
+                    "constant-type": "integer",
+                    "constant-value": 4,
+                    "type": "literal-constant"
+                  },
+                  "type": "equals"
+                },
+                "if-false": null,
+                "if-true": {
+                  "label": null,
+                  "type": "break-statement"
+                },
+                "type": "conditional-statement"
+              }
+            ],
+            "type": "compound-statement"
+          },
+          "loop-index": null,
+          "loop-initialization": {
+            "assignment-type": "int",
+            "expression": {
+              "constant-type": "integer",
+              "constant-value": 0,
+              "type": "literal-constant"
+            },
+            "type": "assignment",
+            "variable": {
+              "type": "variable-reference",
+              "variable-name": "i",
+              "variable-type": "int",
+              "variable-usage": "lvalue"
+            }
+          },
+          "loop-pass-to-next-iteration": {
+            "argument": {
+              "type": "variable-reference",
+              "variable-name": "i",
+              "variable-type": "int",
+              "variable-usage": "lvalue"
+            },
+            "result-type": "int",
+            "type": "postfix-increment"
+          },
+          "type": "loop-statement"
+        },
+        {
+          "expression": {
+            "constant-type": "integer",
+            "constant-value": 0,
+            "type": "literal-constant"
+          },
+          "the-last-statement": true,
+          "type": "return-statement"
+        }
+      ],
+      "type": "compound-statement"
+    },
+    "subroutine-name": "main",
+    "subroutines-section": [],
+    "type": "subroutine-declaration",
+    "type-section": [],
+    "variables-section": []
+  }
+]

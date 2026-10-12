@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Color",
+    "type": "enumeration-type",
+    "values": [
+      "RED",
+      "GREEN",
+      "BLUE"
+    ]
+  },
+  {
+    "name": "myint",
+    "old-name": {
+      "type": "builtin-type",
+      "type-value": "int"
+    },
+    "type": "typedef-type"
+  },
+  {
+    "arguments-declarators": [],
+    "constant-section": [],
+    "result-type": {
+      "type": "builtin-type",
+      "type-value": "int"
+    },
+    "subroutine-body": {
+      "statements": [
+        {
+          "expression": {
+            "constant-type": "integer",
+            "constant-value": 0,
+            "type": "literal-constant"
+          },
+          "the-last-statement": true,
+          "type": "return-statement"
+        }
+      ],
+      "type": "compound-statement"
+    },
+    "subroutine-name": "main",
+    "subroutines-section": [],
+    "type": "subroutine-declaration",
+    "type-section": [],
+    "variables-section": []
+  }
+]

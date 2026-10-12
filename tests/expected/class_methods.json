@@ -1,0 +1,86 @@
+[
+  {
+    "base-structs": [],
+    "fields": [
+      {
+        "const": false,
+        "declarators": [
+          {
+            "constructor-arguments": [],
+            "constructor-name": null,
+            "reference": false,
+            "type": "declarator",
+            "variable-name": "n",
+            "variable-type": {
+              "type": "builtin-type",
+              "type-value": "int"
+            }
+          }
+        ],
+        "global": false,
+        "static": false,
+        "type": "variables-declaration"
+      }
+    ],
+    "friends": [],
+    "methods": [
+      {
+        "arguments-declarators": [],
+        "constant-section": [],
+        "result-type": {
+          "type": "builtin-type",
+          "type-value": "int"
+        },
+        "subroutine-body": {
+          "statements": [
+            {
+              "expression": {
+                "type": "variable-reference",
+                "variable-name": "n",
+                "variable-type": "int",
+                "variable-usage": "rvalue"
+              },
+              "the-last-statement": true,
+              "type": "return-statement"
+            }
+          ],
+          "type": "compound-statement"
+        },
+        "subroutine-name": "get",
+        "subroutines-section": [],
+        "type": "subroutine-declaration",
+        "type-section": [],
+        "variables-section": []
+      }
+    ],
+    "name": "Counter",
+    "type": "struct-type"
+  },
+  {
+    "arguments-declarators": [],
+    "constant-section": [],
+    "result-type": {
+      "type": "builtin-type",
+      "type-value": "int"
+    },
+    "subroutine-body": {
+      "statements": [
+        {
+          "expression": {
+            "constant-type": "integer",
+            "constant-value": 0,
+            "type": "literal-constant"
+          },
+          "the-last-statement": true,
+          "type": "return-statement"
+        }
+      ],
+      "type": "compound-statement"
+    },
+    "subroutine-name": "main",
+    "subroutines-section": [],
+    "type": "subroutine-declaration",
+    "type-section": [],
+    "variables-section": []
+  }
+]

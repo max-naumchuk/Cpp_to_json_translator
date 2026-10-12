@@ -1,0 +1,236 @@
+[
+  {
+    "arguments-declarators": [],
+    "constant-section": [],
+    "result-type": {
+      "type": "builtin-type",
+      "type-value": "int"
+    },
+    "subroutine-body": {
+      "statements": [
+        {
+          "const": false,
+          "declarators": [
+            {
+              "constructor-arguments": [],
+              "constructor-name": null,
+              "reference": false,
+              "type": "declarator",
+              "variable-name": "i",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "int"
+              }
+            },
+            {
+              "constructor-arguments": [],
+              "constructor-name": null,
+              "reference": false,
+              "type": "declarator",
+              "variable-name": "s",
+              "variable-type": {
+                "type": "builtin-type",
+                "type-value": "int"
+              }
+            }
+          ],
+          "global": false,
+          "static": false,
+          "type": "variables-declaration"
+        },
+        {
+          "expression": {
+            "assignment-type": "int",
+            "expression": {
+              "constant-type": "integer",
+              "constant-value": 0,
+              "type": "literal-constant"
+            },
+            "type": "assignment",
+            "variable": {
+              "type": "variable-reference",
+              "variable-name": "s",
+              "variable-type": "int",
+              "variable-usage": "lvalue"
+            }
+          },
+          "type": "expression-statement"
+        },
+        {
+          "begin-condition": {
+            "left": {
+              "type": "variable-reference",
+              "variable-name": "j",
+              "variable-type": "int",
+              "variable-usage": "rvalue"
+            },
+            "result-type": "boolean",
+            "right": {
+              "constant-type": "integer",
+              "constant-value": 3,
+              "type": "literal-constant"
+            },
+            "type": "less"
+          },
+          "end-condition": null,
+          "loop-body": {
+            "statements": [
+              {
+                "expression": {
+                  "assignment-type": "int",
+                  "expression": {
+                    "type": "variable-reference",
+                    "variable-name": "j",
+                    "variable-type": "int",
+                    "variable-usage": "rvalue"
+                  },
+                  "type": "assignment-sum",
+                  "variable": {
+                    "type": "variable-reference",
+                    "variable-name": "s",
+                    "variable-type": "int",
+                    "variable-usage": "lvalue"
+                  }
+                },
+                "type": "expression-statement"
+              }
+            ],
+            "type": "compound-statement"
+          },
+          "loop-index": "j",
+          "loop-initialization": {
+            "const": false,
+            "declarators": [
+              {
+                "constructor-arguments": [
+                  {
+                    "constant-type": "integer",
+                    "constant-value": 0,
+                    "type": "literal-constant"
+                  }
+                ],
+                "constructor-name": null,
+                "reference": false,
+                "type": "declarator",
+                "variable-name": "j",
+                "variable-type": {
+                  "type": "builtin-type",
+                  "type-value": "int"
+                }
+              }
+            ],
+            "global": false,
+            "static": false,
+            "type": "variables-declaration"
+          },
+          "loop-pass-to-next-iteration": {
+            "argument": {
+              "type": "variable-reference",
+              "variable-name": "j",
+              "variable-type": "int",
+              "variable-usage": "lvalue"
+            },
+            "result-type": "int",
+            "type": "postfix-increment"
+          },
+          "type": "loop-statement"
+        },
+        {
+          "begin-condition": {
+            "left": {
+              "type": "variable-reference",
+              "variable-name": "s",
+              "variable-type": "int",
+              "variable-usage": "rvalue"
+            },
+            "result-type": "boolean",
+            "right": {
+              "constant-type": "integer",
+              "constant-value": 0,
+              "type": "literal-constant"
+            },
+            "type": "greater"
+          },
+          "end-condition": null,
+          "loop-body": {
+            "statements": [
+              {
+                "expression": {
+                  "argument": {
+                    "type": "variable-reference",
+                    "variable-name": "s",
+                    "variable-type": "int",
+                    "variable-usage": "lvalue"
+                  },
+                  "result-type": "int",
+                  "type": "postfix-decrement"
+                },
+                "type": "expression-statement"
+              }
+            ],
+            "type": "compound-statement"
+          },
+          "loop-index": null,
+          "loop-initialization": null,
+          "loop-pass-to-next-iteration": null,
+          "type": "loop-statement"
+        },
+        {
+          "begin-condition": null,
+          "end-condition": {
+            "left": {
+              "type": "variable-reference",
+              "variable-name": "s",
+              "variable-type": "int",
+              "variable-usage": "rvalue"
+            },
+            "result-type": "boolean",
+            "right": {
+              "constant-type": "integer",
+              "constant-value": 2,
+              "type": "literal-constant"
+            },
+            "type": "less"
+          },
+          "loop-body": {
+            "statements": [
+              {
+                "expression": {
+                  "argument": {
+                    "type": "variable-reference",
+                    "variable-name": "s",
+                    "variable-type": "int",
+                    "variable-usage": "lvalue"
+                  },
+                  "result-type": "int",
+                  "type": "postfix-increment"
+                },
+                "type": "expression-statement"
+              }
+            ],
+            "type": "compound-statement"
+          },
+          "loop-index": null,
+          "loop-initialization": null,
+          "loop-pass-to-next-iteration": null,
+          "type": "loop-statement"
+        },
+        {
+          "expression": {
+            "constant-type": "integer",
+            "constant-value": 0,
+            "type": "literal-constant"
+          },
+          "the-last-statement": true,
+          "type": "return-statement"
+        }
+      ],
+      "type": "compound-statement"
+    },
+    "subroutine-name": "main",
+    "subroutines-section": [],
+    "type": "subroutine-declaration",
+    "type-section": [],
+    "variables-section": []
+  }
+]
