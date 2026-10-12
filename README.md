@@ -6,3 +6,5 @@ compilation: src/main.cpp
 
 run: In Parser_project:  src/fullparser <path_to_test_file>
 example: src/fullparser tests/inputs/arith_int.cpp
+
+OR run all tests in tests/input : ./tests/run_tests.sh
