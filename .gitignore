@@ -1,6 +1,5 @@
 .DS_Store
-.src/lexer.yy.cpp
-.src/parser.tab.cpp
-.src/parser.tab.hpp
-.src/fullparser
-.src/fullparser.dSYM
+src/lexer.yy.cpp
+src/parser.tab.cpp
+src/parser.tab.hpp
+src/fullparser
