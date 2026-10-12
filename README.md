@@ -8,7 +8,13 @@ initialize flex and bison (внутри папки src):
 
 bison -d -o parser.tab.cpp parser.y
 flex -o lexer.yy.cpp lexer.l
-g++ -std=c++17 -o fullparser main.cpp parser.tab.cpp lexer.yy.cpp
+
+fedora:
+g++ -std=c++17 -o fullparser main.cpp parser.tab.cpp lexer.yy.cpp 
+
+mac: 
+
+g++ -std=c++17 -I/opt/homebrew/include -o fullparser main.cpp parser.tab.cpp lexer.yy.cpp
 
 compilation: src/main.cpp
 
