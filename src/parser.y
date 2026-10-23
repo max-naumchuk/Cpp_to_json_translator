@@ -6,6 +6,8 @@
 %{
 #include <cstdio>
 #include <vector>
+#include <map>
+#include <set>
 #include <unordered_map>
 #include <nlohmann/json.hpp>
 
@@ -281,7 +283,7 @@ static bool computePassControl(const nlohmann::ordered_json &variants) {
 
 %token TOK_LPAREN TOK_RPAREN TOK_LBRACE TOK_RBRACE
 %token TOK_LBRACKET TOK_RBRACKET TOK_SEMICOLON TOK_COLON TOK_COMMA
-%token TOK_QUESTION
+%token TOK_QUESTION TOK_HASH
 
 %token TOK_ASSIGN TOK_EQ
 %token TOK_PLUS TOK_PLUS_ASSIGN TOK_INCREMENT
@@ -292,7 +294,7 @@ static bool computePassControl(const nlohmann::ordered_json &variants) {
 %token TOK_AMP TOK_AMP_ASSIGN TOK_LOGICAL_AND
 %token TOK_PIPE TOK_PIPE_ASSIGN TOK_LOGICAL_OR
 %token TOK_CARET TOK_CARET_ASSIGN
-%token TOK_TILDE
+%token TOK_TILDE TOK_ARROW TOK_DOT
 %token TOK_LOGICAL_NOT TOK_NE
 %token TOK_LT TOK_LE TOK_SHL TOK_SHL_ASSIGN
 %token TOK_GT TOK_GE TOK_SHR TOK_SHR_ASSIGN

@@ -11,6 +11,7 @@
 [0-9]+                  { yylval.ival = atol(yytext); return TOK_INTEGER_LITERAL; }
 \"([^\"\\]|\\.)*\"      { yylval.sval = new std::string(yytext + 1, yyleng - 2); return TOK_STRING_LITERAL; }
 
+
 "break"                   { return TOK_BREAK; }
 "case"                    { return TOK_CASE; }
 "class"                   { return TOK_CLASS; }
@@ -61,6 +62,7 @@
 "||"                      { return TOK_LOGICAL_OR; }
 "++"                      { return TOK_INCREMENT; }
 "--"                      { return TOK_DECREMENT; }
+"->"                      { return TOK_ARROW; }
 "+="                      { return TOK_PLUS_ASSIGN; }
 "-="                      { return TOK_MINUS_ASSIGN; }
 "*="                      { return TOK_STAR_ASSIGN; }
@@ -83,6 +85,7 @@
 "!"                        { return TOK_LOGICAL_NOT; }
 "<"                        { return TOK_LT; }
 ">"                        { return TOK_GT; }
+"."                        { return TOK_DOT; }
 
 "("                        { return TOK_LPAREN; }
 ")"                        { return TOK_RPAREN; }
@@ -94,9 +97,12 @@
 ":"                        { return TOK_COLON; }
 ","                        { return TOK_COMMA; }
 "?"                        { return TOK_QUESTION; }
+"#"                        { return TOK_HASH; } 
 
-[ \t\r\n]+                 {  }
+[ \t\r\n]+                 { /* skip */}
+"//".*                     { /* skip */ }
+"/*"([^*]|\*+[^*/])*\*+"/" { /* skip */ }
 
-.                           {}
+.                          {}
 
 %%
